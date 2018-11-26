@@ -1,0 +1,6 @@
+[submodule "themes/resume"]
+	path = themes/resume
+	url = https://github.com/eddiewebb/hugo-resume.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git

@@ -1,0 +1,10 @@
+[
+  {
+      "grouping":"Languages",
+      "skills":[ "Java","Python","C","ruby","C#","MATLAB","SQL"]
+  },
+  {
+      "grouping":"Platform Development",
+      "skills":[ "STM32","Digilent ZYBO","GitHub","MySQL","PSIM"]
+  }
+]

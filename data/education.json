@@ -1,0 +1,22 @@
+[
+    {
+        "school":"University of Salerno",
+        "degree":"Master of Science",
+        "major":"Computer Engineering",
+        "notes":"Specialization in industrial and energy applications",
+        "range":"2017 - current"
+    },
+    {
+        "school":"University of Salerno",
+        "degree":"Bachelor of Science",
+        "major":"Computer Engineering",
+        "notes":"Beta Gamma Signma, High Honors",
+        "range":"2012 - 2017"
+    },
+    {
+        "school":"High School R. Di Palo",
+        "degree":"Chartered Building Surveyor",
+        "major":"",
+        "range":"2007 - 2012"
+    }
+]

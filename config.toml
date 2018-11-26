@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Vittorio Mattei"
+theme = "resume"
+
+[params]
+    firstName = "Vittorio"
+    lastName = "Mattei"
+    address = "Italy"
+    phone = "0000000"
+    contactNote = "Computer Engineer"
+    profileImage = "img/profile.jpg"
+    email = "vittorio.mattei@outlook.com"
+    description = "Software Engineer with experience in high level languages like Java and MCU programming in C."
+    favicon = "images/favicon.ico"
+    # what sections
+    showSkills = true
+    showProjects = false
+    showOpenSource = false
+    showPublications = false
+    showExperience = true
+    showEducation = true
+
+    showQr = true
+
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/"
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/vittoriom94/"
+
+
+[params.google.analytics]
+    trackerID = "XX-123446-01"
