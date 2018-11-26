@@ -2,246 +2,246 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Vittorio Mattei</title>
-    <link>http://vittoriom94.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Vittorio Mattei</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://vittoriom94.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Agile</title>
-      <link>http://vittoriom94.github.io/tags/agile/</link>
+      <link>/tags/agile/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/agile/</guid>
+      <guid>/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Atlassian Developer Ecosystem</title>
-      <link>http://vittoriom94.github.io/tags/atlassian-developer-ecosystem/</link>
+      <link>/tags/atlassian-developer-ecosystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/atlassian-developer-ecosystem/</guid>
+      <guid>/tags/atlassian-developer-ecosystem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Atlassian Ecosystem</title>
-      <link>http://vittoriom94.github.io/tags/atlassian-ecosystem/</link>
+      <link>/tags/atlassian-ecosystem/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/atlassian-ecosystem/</guid>
+      <guid>/tags/atlassian-ecosystem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bamboo</title>
-      <link>http://vittoriom94.github.io/tags/bamboo/</link>
+      <link>/tags/bamboo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/bamboo/</guid>
+      <guid>/tags/bamboo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bash/Shell</title>
-      <link>http://vittoriom94.github.io/tags/bash-shell/</link>
+      <link>/tags/bash-shell/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/bash-shell/</guid>
+      <guid>/tags/bash-shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitbucket</title>
-      <link>http://vittoriom94.github.io/tags/bitbucket/</link>
+      <link>/tags/bitbucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/bitbucket/</guid>
+      <guid>/tags/bitbucket/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bosh</title>
-      <link>http://vittoriom94.github.io/tags/bosh/</link>
+      <link>/tags/bosh/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/bosh/</guid>
+      <guid>/tags/bosh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ci/Cd Pipelines</title>
-      <link>http://vittoriom94.github.io/tags/ci-cd-pipelines/</link>
+      <link>/tags/ci-cd-pipelines/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/ci-cd-pipelines/</guid>
+      <guid>/tags/ci-cd-pipelines/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Confluence</title>
-      <link>http://vittoriom94.github.io/tags/confluence/</link>
+      <link>/tags/confluence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/confluence/</guid>
+      <guid>/tags/confluence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Delivery</title>
-      <link>http://vittoriom94.github.io/tags/continuous-delivery/</link>
+      <link>/tags/continuous-delivery/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/continuous-delivery/</guid>
+      <guid>/tags/continuous-delivery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Integration</title>
-      <link>http://vittoriom94.github.io/tags/continuous-integration/</link>
+      <link>/tags/continuous-integration/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/continuous-integration/</guid>
+      <guid>/tags/continuous-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Culture</title>
-      <link>http://vittoriom94.github.io/tags/culture/</link>
+      <link>/tags/culture/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/culture/</guid>
+      <guid>/tags/culture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>http://vittoriom94.github.io/tags/devops/</link>
+      <link>/tags/devops/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/devops/</guid>
+      <guid>/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://vittoriom94.github.io/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://vittoriom94.github.io/tags/java/</link>
+      <link>/tags/java/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/java/</guid>
+      <guid>/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>http://vittoriom94.github.io/tags/javascript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/javascript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jira</title>
-      <link>http://vittoriom94.github.io/tags/jira/</link>
+      <link>/tags/jira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/jira/</guid>
+      <guid>/tags/jira/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jquery</title>
-      <link>http://vittoriom94.github.io/tags/jquery/</link>
+      <link>/tags/jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/jquery/</guid>
+      <guid>/tags/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Json</title>
-      <link>http://vittoriom94.github.io/tags/json/</link>
+      <link>/tags/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/json/</guid>
+      <guid>/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>http://vittoriom94.github.io/tags/maven/</link>
+      <link>/tags/maven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/maven/</guid>
+      <guid>/tags/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Monit</title>
-      <link>http://vittoriom94.github.io/tags/monit/</link>
+      <link>/tags/monit/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/monit/</guid>
+      <guid>/tags/monit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Node.js</title>
-      <link>http://vittoriom94.github.io/tags/node.js/</link>
+      <link>/tags/node.js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/node.js/</guid>
+      <guid>/tags/node.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://vittoriom94.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rest Apis</title>
-      <link>http://vittoriom94.github.io/tags/rest-apis/</link>
+      <link>/tags/rest-apis/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/rest-apis/</guid>
+      <guid>/tags/rest-apis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring</title>
-      <link>http://vittoriom94.github.io/tags/spring/</link>
+      <link>/tags/spring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/spring/</guid>
+      <guid>/tags/spring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xml/Xslt</title>
-      <link>http://vittoriom94.github.io/tags/xml-xslt/</link>
+      <link>/tags/xml-xslt/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>http://vittoriom94.github.io/tags/xml-xslt/</guid>
+      <guid>/tags/xml-xslt/</guid>
       <description></description>
     </item>
     
