@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Vittorio Mattei</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Vittorio Mattei</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile</title>
+      <link>http://example.org/tags/agile/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atlassian Developer Ecosystem</title>
+      <link>http://example.org/tags/atlassian-developer-ecosystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/atlassian-developer-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atlassian Ecosystem</title>
+      <link>http://example.org/tags/atlassian-ecosystem/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/atlassian-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bamboo</title>
+      <link>http://example.org/tags/bamboo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/bamboo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash/Shell</title>
+      <link>http://example.org/tags/bash-shell/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/bash-shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bitbucket</title>
+      <link>http://example.org/tags/bitbucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/bitbucket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bosh</title>
+      <link>http://example.org/tags/bosh/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/bosh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ci/Cd Pipelines</title>
+      <link>http://example.org/tags/ci-cd-pipelines/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/ci-cd-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Confluence</title>
+      <link>http://example.org/tags/confluence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/confluence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery</title>
+      <link>http://example.org/tags/continuous-delivery/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/continuous-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>http://example.org/tags/continuous-integration/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Culture</title>
+      <link>http://example.org/tags/culture/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>http://example.org/tags/devops/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://example.org/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://example.org/tags/java/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://example.org/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jira</title>
+      <link>http://example.org/tags/jira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/jira/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>http://example.org/tags/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/jquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>http://example.org/tags/json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>http://example.org/tags/maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monit</title>
+      <link>http://example.org/tags/monit/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/monit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>http://example.org/tags/node.js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://example.org/tags/python/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rest Apis</title>
+      <link>http://example.org/tags/rest-apis/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/rest-apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>http://example.org/tags/spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xml/Xslt</title>
+      <link>http://example.org/tags/xml-xslt/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>http://example.org/tags/xml-xslt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
