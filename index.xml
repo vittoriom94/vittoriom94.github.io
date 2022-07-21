@@ -1,0 +1,72 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Vittorio Mattei</title><link>https://vittoriomattei.com/</link><description>Recent content in Home on Vittorio Mattei</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Feb 2018 18:56:13 -0500</lastBuildDate><atom:link href="https://vittoriomattei.com/" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://vittoriomattei.com/about/</link><pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate><guid>https://vittoriomattei.com/about/</guid><description>&lt;p>Welcome to my personal website!&lt;br>
+My name is &lt;strong>Vittorio Mattei&lt;/strong> and I am a &lt;em>software engineer&lt;/em> from &lt;strong>Italy&lt;/strong>.&lt;br>
+Below you can find some information about me. For more details, I recommend you to check out my &lt;a href="https://www.linkedin.com/in/vittorio-mattei/">LinkedIn&lt;/a> profile.&lt;br>
+I am currently interested in backend and cloud technologies. My current stack is &lt;strong>Python, Django, DRF, Airflow, AWS&lt;/strong>. &lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Work Experience&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.socialbeat.it/copia-di-italiano">Socialbeat&lt;/a>&lt;/td>
+&lt;td>Backend Engineer, Cloud Engineer&lt;/td>
+&lt;td>Sep 2021 - current&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.reply.com/en/">Reply&lt;/a>&lt;/td>
+&lt;td>Embedded Engineer, Application Engineer&lt;/td>
+&lt;td>Jan 2020 - Aug 2021&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Education&lt;/strong>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Msc in Computer Engineering&lt;/td>
+&lt;td>University of Salerno&lt;/td>
+&lt;td>2019&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bsc in Computer Engineering&lt;/td>
+&lt;td>University of Salerno&lt;/td>
+&lt;td>2017&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Search Results</title><link>https://vittoriomattei.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vittoriomattei.com/search/</guid><description>&lt;p>This file exists solely to respond to /search URL with the related &lt;code>search&lt;/code> layout template.&lt;/p>
+&lt;p>No content shown here is rendered, all content is based in the template layouts/page/search.html&lt;/p>
+&lt;p>Setting a very low sitemap priority will tell search engines this is not important content.&lt;/p>
+&lt;p>This implementation uses Fusejs, jquery and mark.js&lt;/p>
+&lt;h2 id="initial-setup">Initial setup&lt;/h2>
+&lt;p>Search depends on additional output content type of JSON in config.toml&lt;/p>
+&lt;pre tabindex="0">&lt;code>[outputs]
+home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;]
+&lt;/code>&lt;/pre>&lt;h2 id="searching-additional-fileds">Searching additional fileds&lt;/h2>
+&lt;p>To search additional fields defined in front matter, you must add it in 2 places.&lt;/p>
+&lt;h3 id="edit-layouts_defaultindexjson">Edit layouts/_default/index.JSON&lt;/h3>
+&lt;p>This exposes the values in /index.json
+i.e. add &lt;code>category&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>...
+&amp;#34;contents&amp;#34;:{{ .Content | plainify | jsonify }}
+{{ if .Params.tags }},
+&amp;#34;tags&amp;#34;:{{ .Params.tags | jsonify }}{{end}},
+&amp;#34;categories&amp;#34; : {{ .Params.categories | jsonify }},
+...
+&lt;/code>&lt;/pre>&lt;h3 id="edit-fusejs-options-to-search">Edit fuse.js options to Search&lt;/h3>
+&lt;p>&lt;code>static/js/search.js&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>keys: [
+&amp;#34;title&amp;#34;,
+&amp;#34;contents&amp;#34;,
+&amp;#34;tags&amp;#34;,
+&amp;#34;categories&amp;#34;
+]
+&lt;/code>&lt;/pre></description></item></channel></rss>

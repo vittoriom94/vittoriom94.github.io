@@ -1,0 +1,28 @@
+<head>
+
+</head>
+<body>
+  <form onsubmit="return formatVariables()" id="ieform" method=POST>
+    <input type="submit">
+  </form>
+  <br>
+  <textarea id="variables" rows="35" cols="50" name="testo" form="ieform">Variabili</textarea>
+  <textarea id="formattedVariables" rows="35" cols="50" name="testo" form="ieform">Formattato</textarea>
+  <script>
+    
+    
+    function formatVariables(){
+      var unformattedTextList = document.getElementById("variables").value.split("\n");
+      console.log(unformattedTextList);
+      var formattedText = "Coef3P3Z_2[0] = "+ unformattedTextList[32].trim()+ "; //b3\n" +
+                          "Coef3P3Z_2[1] = "+ unformattedTextList[27].trim()+ "; //b2\n" +
+                          "Coef3P3Z_2[2] = "+ unformattedTextList[22].trim()+ "; //b1\n" +
+                          "Coef3P3Z_2[3] = "+ unformattedTextList[17].trim()+ "; //b0\n" +
+                          "Coef3P3Z_2[4] = "+ unformattedTextList[12].trim()+ "; //a3\n" +
+                          "Coef3P3Z_2[5] = "+ unformattedTextList[7].trim()+ "; //a2\n" +
+                          "Coef3P3Z_2[6] = "+ unformattedTextList[2].trim()+ "; //a1";
+      document.getElementById("formattedVariables").value = formattedText;
+      return false
+    }
+  </script>
+</body>
