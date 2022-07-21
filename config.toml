@@ -1,36 +1,84 @@
-baseURL = "http://example.org/"
+baseURL = "https://vittoriomattei.com"
+relativeurls=true
 languageCode = "en-us"
 title = "Vittorio Mattei"
-theme = "resume"
+theme = "KeepIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+disqusShortname = "yourdiscussshortname"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
 
 [params]
-    firstName = "Vittorio"
-    lastName = "Mattei"
-    address = "Italy"
-    phone = "0000000"
-    contactNote = "Computer Engineer"
-    profileImage = "img/profile.jpg"
-    email = "vittorio.mattei@outlook.com"
-    description = "Software Engineer with experience in high level languages like Java and MCU programming in C."
-    favicon = "images/favicon.ico"
-    # what sections
-    showSkills = true
-    showProjects = false
-    showOpenSource = false
-    showPublications = false
-    showExperience = true
-    showEducation = true
+    subtitle = "A coding space"       # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+    dateFormatToUse = "" # set date format, default "2 January 2006"
+    
+    google_verification = ""
+    bing_verification = ""
+    yandex_verification = ""
+    pinterest_verification = ""
+    baidu_verification = ""
 
-    showQr = true
+    avatar = "/images/me/avatar.jpeg" #comment it to use gravatar
+    socialShare = true
 
-[[params.handles]]
-    name = "LinkedIn"
-    link = "https://www.linkedin.com/"
+    description = "Vittorio Mattei's personal website and blog" # site description
+    keywords = "portfolio resume blog coding programming python software engineering developer" # site keywords
 
-[[params.handles]]
-    name = "GitHub"
-    link = "https://github.com/vittoriom94/"
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.gravatar]
+    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
 
 
-[params.google.analytics]
-    trackerID = "XX-123446-01"
+[params.social]
+    GitHub = "vittoriom94"
+    Linkedin = "vittorio-mattei"
+    Email   = "vimattei94@gmail.com"
+
+[params.share]
+Twitter = true
+Facebook = true
+Reddit = true
+Linkedin = true
+
+# Used only for Seo schema
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "Vittorio Mattei"
+
+  [params.publisher]
+    name = "Vittorio Mattei"
