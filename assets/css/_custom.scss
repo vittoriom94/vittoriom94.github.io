@@ -1,0 +1,19 @@
+// ==============================
+// Custom style
+// ==============================
+// You can override the variables in _variables.scss to customize the style
+
+.post-warp {
+    .post-content {
+        code:not([class]) {
+            background: none;
+            border: none;
+            box-shadow: none;
+
+            .dark-theme &:not([class]) {
+                background: none;
+                box-shadow: none
+            }
+        }
+    }
+}
