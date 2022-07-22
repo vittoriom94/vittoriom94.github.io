@@ -16,7 +16,7 @@ I am currently interested in backend and cloud technologies. My current stack is
 |[Socialbeat](https://www.socialbeat.it/copia-di-italiano)|Backend Engineer, Cloud Engineer|Sep 2021 - current|
 |[Reply](https://www.reply.com/en/)|Embedded Engineer, Application Engineer|Jan 2020 - Aug 2021|
 |**Education**|||
-|Msc in Computer Engineering|University of Salerno|2019
-|Bsc in Computer Engineering|University of Salerno|2017
+|Msc in Computer Engineering|University of Salerno|2019|
+|Bsc in Computer Engineering|University of Salerno|2017|
 
 
