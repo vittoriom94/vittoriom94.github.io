@@ -1,0 +1,141 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><link rel=canonical href=https://vittoriomattei.com/2022/python-if-else-alternatives/><link rel='shortcut icon' type=image/x-icon href=../../favicon.ico><link rel=apple-touch-icon sizes=180x180 href=../../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../../favicon-16x16.png><link rel=manifest href=../../site.webmanifest><link rel=mask-icon href=../../safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><title>Python if-else alternatives for better design | Vittorio Mattei</title><meta name=title content="Python if-else alternatives for better design | Vittorio Mattei"><link rel=stylesheet href=https://vittoriomattei.com/font/iconfont.css><link rel=stylesheet href=https://vittoriomattei.com/css/main.min.css><meta name=twitter:card content="summary"><meta name=twitter:title content="Python if-else alternatives for better design"><meta name=twitter:description content="There is no doubt that one of the first conditional construct a programmer will encounter is the if-elif-else construct.
+While the syntax may change across languages, the logical meaning is always the same:
+if condition_1: do something else if condition_2: do something different else: do something generic While this construct is incredibly easy to use, there are some drawbacks to it, when the logic starts expanding.
+Note that obviously there isn&rsquo;t a best rule, the only way to decide which solution to use is on a case by case scenario."><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Python if-else alternatives for better design","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/vittoriomattei.com\/2022\/python-if-else-alternatives\/"},"genre":"posts","keywords":"programming, python, beginner, design","wordcount":1373,"url":"https:\/\/vittoriomattei.com\/2022\/python-if-else-alternatives\/","datePublished":"2022-07-22T00:00:00\u002b00:00","dateModified":"2022-07-22T00:00:00\u002b00:00","publisher":{"@type":"Organization","name":"Vittorio Mattei","logo":{"@type":"ImageObject","url":"https:\/\/vittoriomattei.com","width":null,"height":null}},"author":{"@type":"Person","name":"Vittorio Mattei"},"description":""}</script></head><body><div class=wrapper><nav class=navbar><div class=container><div class="navbar-header header-logo"><a href=https://vittoriomattei.com>Vittorio Mattei</a></div><div class="menu navbar-right"><a class=menu-item href=../../posts/ title>Blog</a>
+<a class=menu-item href=../../categories/ title>Categories</a>
+<a class=menu-item href=../../about title>About</a>
+<a href=javascript:void(0); class=theme-switch><i class="iconfont icon-sun"></i></a>&nbsp;</div></div></nav><nav class=navbar-mobile id=nav-mobile style=display:none><div class=container><div class=navbar-header><div><a href=javascript:void(0); class=theme-switch><i class="iconfont icon-sun"></i></a>&nbsp;<a href=https://vittoriomattei.com>Vittorio Mattei</a></div><div class=menu-toggle><span></span><span></span><span></span></div></div><div class=menu id=mobile-menu><a class=menu-item href=../../posts/ title>Blog</a>
+<a class=menu-item href=../../categories/ title>Categories</a>
+<a class=menu-item href=../../about title>About</a></div></div></nav><main class=main><div class=container><article class=post-warp><header class=post-header><h1 class=post-title>Python if-else alternatives for better design</h1><div class=post-meta>Written by <a href=https://vittoriomattei.com rel=author>Vittorio Mattei</a> with ♥
+<span class=post-time>on <time datetime=2022-07-22>22 July 2022</time></span>
+in
+<i class="iconfont icon-folder"></i>
+<span class=post-category><a href=https://vittoriomattei.com/categories/programming/>Programming</a></span>
+<i class="iconfont icon-timer"></i>
+7 min</div></header><div class=post-content><p>There is no doubt that one of the first conditional construct a programmer will encounter is the if-elif-else construct.<br>While the syntax may change across languages, the logical meaning is always the same:</p><pre tabindex=0><code>if condition_1:
+    do something
+else if condition_2:
+    do something different
+else:
+    do something generic
+</code></pre><p>While this construct is incredibly easy to use, there are some drawbacks to it, when the logic starts expanding.<br>Note that obviously there isn&rsquo;t a best rule, the only way to decide which solution to use is on a case by case scenario. Refactoring is also a fundamental tool. Nothing stops you from using one method and then changing to another later, when you realize your code can be simplified by a refactoring.</p><h1 id=case-1-multiple-well-defined-conditions>Case 1: Multiple well defined conditions</h1><p>In the first case we&rsquo;ll set up the following scenario.<br>We are creating a texting game. The player can cast spells to attack enemies, and we just decided to implement two simple spells: &ldquo;fireball&rdquo; and &ldquo;thunderbolt&rdquo;.<br>The setup for this part of the code is simple: the player inputs a command <strong>&ldquo;spell <em>&lt;spell_name></em>&rdquo;</strong> and the corresponding spell is cast to the enemy. We assume that the enemy is already selected by a previous command and we just want to cast the spell against him. We also assume that the spell command is already interpreted, so the only part to handle is the spell selection and cast.</p><p>To cast a spell, we need to call the method <em>cast</em> of the object <em>player</em>. The method takes two parameters: the spell object and the enemy.</p><pre tabindex=0><code># player.py
+class Player(Entity):
+    ...
+    def cast(spell: spells.Spell, enemy: enemy.Enemy):
+        # do something
+    ...
+</code></pre><p>The <strong>issue</strong> that we want to resolve is how to map a string to a spell class.<br>The simplest solution is to use a typical if-elif-else chain. If we find the spell, we can call the <em>cast</em> method, otherwise we raise an exception, that can be handled from outside when there isn&rsquo;t a match for a command.</p><pre tabindex=0><code># spells.py
+class Spell:
+    ...
+class Fireball(Spell):
+    ...
+...
+# Assume that we defind all possible spells as classes that extend Spell
+
+def elaborate_input_spell(spell_name: str, player: player.Player, enemy: enemy.Enemy):
+    if spell_name == &#34;fireball&#34;:
+        return player.cast(Fireball(), enemy)
+    elif spell_name == &#34;thunderbolt&#34;:
+        return player.cast(Thunderbolt(), enemy)
+    else:
+        raise Exception(&#34;Spell not found.&#34;, spell_name)
+</code></pre><p>This solution is simple and easy to understand, but what if we need to add more spells? That code might easily devolve into something like this:</p><pre tabindex=0><code># spells.py
+
+def elaborate_input_spell(spell_name: str, player: player.Player, enemy: enemy.Enemy):
+    if spell_name == &#34;fireball&#34;:
+        return player.cast(Fireball(), enemy)
+    elif spell_name == &#34;thunderbolt&#34;:
+        return player.cast(Thunderbolt(), enemy)
+    elif spell_name == &#34;blizzard&#34;:
+        return player.cast(Blizzard(), enemy)
+    elif spell_name == &#34;meteor&#34;:
+        return player.cast(Meteor(), enemy)
+    elif spell_name == &#34;sap&#34;:
+        return player.cast(Sap(), enemy)
+    elif spell_name == &#34;whirlwind&#34;:
+        return player.cast(Whirlwind(), enemy)
+    elif spell_name == &#34;storm&#34;:
+        return player.cast(Storm(), enemy)
+    elif spell_name == &#34;bury&#34;:
+        return player.cast(Bury(), enemy)
+    elif spell_name == &#34;blind&#34;:
+        return player.cast(Blind(), enemy)
+    else:
+        raise Exception(&#34;Spell not found.&#34;, spell_name)
+</code></pre><p>&mldr; and so on and so on.<br>Note how all the conditions are a simple equality of strings, and each string is then <strong>mapped</strong> to a fixed class. Why not use a <a href=https://docs.python.org/3/tutorial/datastructures.html#dictionaries>dictionary</a> for this?<br>A dictionary allows to map a <em>key</em> to a <em>value</em>. Keys and values can be of any type so this is not only restricted between strings and classes but you can do any kind of mapping.</p><p>Here&rsquo;s how we can refactor the above code by using a dictionary:</p><pre tabindex=0><code># spells.py
+# Spell classes definitions go here
+
+spells = {
+    &#34;fireball&#34;: Fireball,
+    &#34;thunderbolt&#34;: Thunderbolt,
+    &#34;blizzard&#34;: Blizzard,
+    &#34;meteor&#34;: Meteor,
+    &#34;sap&#34;: Sap,
+    &#34;whirlwind&#34;: Whirlwind,
+    &#34;storm&#34;: Storm,
+    &#34;bury&#34;: Bury,
+    &#34;blind&#34;: Blind
+}
+
+def elaborate_input_spell(spell_name: str, player: player.Player, enemy: enemy.Enemy):
+    spell = spells.get(spell_name)
+    if spell:
+        return player.cast(spell(), enemy)
+    raise Exception(&#34;Spell not found.&#34;, spell_name)
+</code></pre><p>When we have new spells we just need to add them to <em>spells</em>.<br>Note that <strong>dict().get(value)</strong> will return <strong>None</strong> if the key is not found, so we call cast only if spell is not <strong>None</strong>. The return statement will ensure that we don&rsquo;t raise an Exception in the normal flow.<br>Not also that spells is defined outside the method, as to ensure that the variable is initialized only at startup and not in every method call! Also note how the values are classes and not instances, otherwise we would return the same instance everytime we cast a spell, instead of creating a new one.</p><p>It&rsquo;s also import to note that now you can import the spells variable in other modules, so when you need to use spells for additional operation, you don&rsquo;t need to copy the whole if-else tree, but you only import spells.spells.</p><h1 id=case-2-composed-conditions>Case 2: composed conditions</h1><p>Let&rsquo;s now have a different case. This time, we want to sell an item. The sell function will be called when the player inputs the command <strong>&ldquo;sell <em>&lt;item></em>&rdquo;</strong>.<br>We assume that the player is already talking to a merchant and the item to sell has already been selected</p><p>There are different elements to consider:</p><ul><li>The item rarity</li><li>The item type</li><li>The item durability (new, used, destroyed)</li></ul><pre tabindex=0><code># items.py
+item_rarities = [&#34;common&#34;, &#34;rare&#34;, &#34;epic&#34;]
+item_types = [&#34;weapon&#34;, &#34;armor&#34;]
+item_durabilities = [&#34;new&#34;, &#34;used&#34;, &#34;destroyed&#34;]
+
+class Item:
+    rarity: str
+    item_type: str
+    durability: str
+</code></pre><p>Let&rsquo;s assume we start by implementing a sell function that only takes into consideration of the <em>durability</em> property. We can just check it against <em>item_types</em> and return a different sell value:</p><pre tabindex=0><code># merchant.py
+
+def sell(item: items.Item):
+    if item.item_type == &#34;weapon&#34;:
+        return 1000
+    elif item.item_type == &#34;armor&#34;:
+        return 500
+    else:
+        return 0
+</code></pre><p>This is pretty straightforward and we easily implemented a sell function for our game.<br>But what if now we want to take into consideration the durability?</p><pre tabindex=0><code># merchant.py
+
+def sell(item: items.Item):
+    if item.item_type == &#34;weapon&#34; and item.durability == &#34;new&#34;:
+        return 1000
+    elif item.item_type == &#34;armor&#34; and item.durability == &#34;new&#34;:
+        return 500
+    elif (item.item_type == &#34;armor&#34; and item.durability == &#34;used&#34;) or (item.item_type == &#34;weapon&#34; and item.durability == &#34;used&#34;):
+        # We could only check if durability is used, but this may not be true for additional item types
+        return 50
+    elif item.durability == &#34;destroyed&#34;:
+        return 10
+    else:
+        return 0
+</code></pre><p>This starts getting a little bit more confusing and it easily becomes unmaintainable when we add new item types, or we take the rarity into consideration.<br>There are many solutions in this case, it mostly depends on the specific scenario you&rsquo;re analyzing and the action you&rsquo;re doing.<br>In this case we can leverage the fact that we are using a mathematical formula, so we could create maps that associate a base value to the item type and multipliers depending on durability and rarity.</p><h3 id=match-case>Match-case</h3><p>What I want to show next is a different approach that has been available since the release of <strong>Python 3.10</strong>. If you come from Java, C# or C++ you&rsquo;re probably already familiar with this approach as they already had switch-case statement.<br>Python implemented this recently and called them <a href=https://peps.python.org/pep-0636/>match-case</a>, as they allow developers to create pattern matching structures. When if-else conditions start getting long, complicated and depending on each other, you can use match-case to bring some order to the code.<br>Let&rsquo;s rewrite the code seen before</p><pre tabindex=0><code># merchant.py
+
+def sell(item: items.Item):   
+    value_elements = (item.item_type, item.item_durability)
+    match value_elements:
+        case (&#34;weapon&#34;, &#34;new&#34;):
+            return 1000
+        case (&#34;armor&#34;, &#34;new&#34;):
+            return 500
+        case ((&#34;weapon&#34; | &#34;armor&#34;), &#34;used&#34;):
+            return 50
+        case (_, &#34;destroyed&#34;):
+            return 0
+</code></pre><p>Pattern matching allows really powerful conditions and you should check out python documentations for powerful examples. As you can see, it&rsquo;s really easy to add conditions this way, without copying <em>if</em> conditions multiple times in the code. Just remember that this is only possible from <strong>Python 3.10</strong>!</p><h2 id=conclusion>Conclusion</h2><p>As we&rsquo;ve seen, while an if-else approach works, over time it becomes hard to maintain and it easily creates bugs around in your code when you lose tracks of conditions or you start copying your code around. The two easiest solutions depend on the particular case.</p><p>When you have an if-else tree that associates a certain condition with a fixed action, consider using a <strong>dict</strong>. They&rsquo;re easy to implement, they can be imported in other modules and it&rsquo;s easy to modify or improve thm.</p><p>When you&rsquo;re dealing with complex conditions, common actions for multiple conditions, conditions depending only on some parameters, consider using <strong>match-case</strong>. You can probably express the same logical meaning but in a more readable and improvable way.</p></div><div class=post-copyright><p class=copyright-item><span>Words:</span>
+<span>1373</span></p><p class=copyright-item><span>Share:</span>
+<span><a href="//twitter.com/share?url=https%3a%2f%2fvittoriomattei.com%2f2022%2fpython-if-else-alternatives%2f&text=Python%20if-else%20alternatives%20for%20better%20design&via=" target=_blank title="Share on Twitter"><i class="iconfont icon-twitter"></i></a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fvittoriomattei.com%2f2022%2fpython-if-else-alternatives%2f" target=_blank title="Share on Facebook"><i class="iconfont icon-facebook"></i></a>
+<a href="//reddit.com/submit?url=https%3a%2f%2fvittoriomattei.com%2f2022%2fpython-if-else-alternatives%2f&title=Python%20if-else%20alternatives%20for%20better%20design" target=_blank title="Share on Reddit"><i class="iconfont icon-reddit"></i></a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fvittoriomattei.com%2f2022%2fpython-if-else-alternatives%2f&title=Python%20if-else%20alternatives%20for%20better%20design" target=_blank title="Share on LinkedIn"><i class="iconfont icon-linkedin"></i></a></span></p><p class=copyright-item>Released under <a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></p></div><div class=post-tags><section><i class="iconfont icon-icon-tag"></i>Tag:
+<span class=tag><a href=https://vittoriomattei.com/tags/programming/>#programming</a></span>
+<span class=tag><a href=https://vittoriomattei.com/tags/python/>#python</a></span>
+<span class=tag><a href=https://vittoriomattei.com/tags/beginner/>#beginner</a></span>
+<span class=tag><a href=https://vittoriomattei.com/tags/design/>#design</a></span></section><section><a href=javascript:window.history.back();>Back</a></span> ·
+<span><a href=https://vittoriomattei.com>Home</a></span></section></div><div class=post-nav></div><div class=post-comment><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="yourdiscussshortname",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></article></div></main><footer class=footer><div class=copyright>&copy;
+<span>Crafted with ❤️ by <a href=https://github.com/Fastbyte01/KeepIt target=_blank rel="external nofollow noopener noreffer">KeepIt</a> & <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer">Hugo</a></span></div></footer><script src=../../js/vendor_no_gallery.min.js async></script></div></body></html>
