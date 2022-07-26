@@ -16,6 +16,7 @@ tags:
 - design
 series:
 - Python programming
+description: Analysis on possible alternatives for the if elif else construct in Python. Consider using dict or match case.
 ---
 
 There is no doubt that one of the first conditional construct a programmer will encounter is the if-elif-else construct.  
