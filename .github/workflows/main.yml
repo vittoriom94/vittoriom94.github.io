@@ -13,6 +13,7 @@ jobs:
     outputs:
       backend: ${{ steps.filter.outputs.resume }}
     steps:
+      - uses: actions/checkout@v2
       - uses: dorny/paths-filter@v2
         id: filter
         with:
@@ -24,6 +25,7 @@ jobs:
     if: ${{ needs.changes.outputs.resume == 'true' }}
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
       - name: Compile LaTeX resume
         uses: xu-cheng/latex-action@v2
         with:
