@@ -9,11 +9,11 @@ on:
 jobs:
   changes:
     runs-on: ubuntu-latest
-      # Set job outputs to values from filter step
-      outputs:
-        backend: ${{ steps.filter.outputs.resume }}
-      steps:
-        - uses: dorny/paths-filter@v2
+    # Set job outputs to values from filter step
+    outputs:
+      backend: ${{ steps.filter.outputs.resume }}
+    steps:
+      - uses: dorny/paths-filter@v2
         id: filter
         with:
           filters: |
@@ -23,18 +23,19 @@ jobs:
     needs: changes
     if: ${{ needs.changes.outputs.resume == 'true' }}
     runs-on: ubuntu-20.04
-    - name: Compile LaTeX resume
-      uses: xu-cheng/latex-action@v2
-      with:
-          root_file: main.tex
-          working_directory: content/resume
-    - name: Move PDF
-      run: mv content/resume/resume.pdf static/resume/resume.pdf
-    - name: Commit PDF
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-          commit_message: Upload PDF by Github Actions
-          file_pattern: 'static/resume/*.pdf'
+    steps:
+      - name: Compile LaTeX resume
+        uses: xu-cheng/latex-action@v2
+        with:
+            root_file: main.tex
+            working_directory: content/resume
+      - name: Move PDF
+        run: mv content/resume/resume.pdf static/resume/resume.pdf
+      - name: Commit PDF
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Upload PDF by Github Actions
+            file_pattern: 'static/resume/*.pdf'
   deploy:
     if: ${{ always() }}
     needs: compile_resume
