@@ -1,3 +1,5 @@
 public/
 _gen/
 .vscode/
+*.aux
+*.log
