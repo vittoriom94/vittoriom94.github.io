@@ -1,0 +1,57 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer - Backend, DevOps} % Job title
+    {SocialBeat} % Organization
+    {Salerno, Italy} % Location
+    {Sep. 2021 - Current} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed and designed backend application with Python, Django and Django Rest Framework, that allows customers to register, create projects, configure and run pipelines to train and deploy machine learning models.}
+        \item {Developed and designed Apache Airflow application that dynamically creates DAGs based on user projects. The custom DAG imports user datasets from external sources to S3, transforms data based on user filters, creates labeling projects, launches SageMaker training instances, deploys models to ECS using boto3.}
+        \item {Developed and designed Python microservice that can be used as image on SageMaker to concurrently train ML models with common libraries (tensorflow, SKLearn) and choose the best model among them.}
+        \item {Developed and designed Python microservice with Flask that is deployed on ECS and allows ML inference for authorized users, with common ML libraries (tensorflow, SKLearn).}
+        \item {Set up AWS infrastructure with Terraform for the deploy of the above projects, by using (but not limited to) ECS, RDS, S3, Redis, SageMaker.}
+        \item {Improved Docker build process for existing project that reduced build time by 90\%.}
+        \item {Set up CI/CD process using Azure Pipelines that completely removed manual building and deploy processes.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer - Embedded} % Job title
+    {Reply} % Organization
+    {Turin, Italy} % Location
+    {Jan. 2020 - Jul. 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Refactored application from Java to C++, deployed on P\&CM of all IVECO Daily and Stralis vehichles, which allows comunication between vehicle and mobile app (Bluetooth, WebSocket, HTTP) or remote workstation (WebSocket, HTTP). This directly contributed to removing the JVM from the P\&CM and avoid the acquisition of a Java license for each vehicle.}
+        \item {Maintained and improved C++ DLLs and Java modules, responsible for the low-level layer of an application used for communication and diagnosis of all CNH industrial vehicles.}
+        \item {Resolved tickets of customers encountering low-level (C and C++) and protocol issues (CAN, K) with communication between CNH industrial vehicles and diagnostic application.}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer Intern} % Job title
+    {EnergyPolis} % Organization
+    {Salerno, Italy} % Location
+    {May. 2017 - Jul. 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed Java application that converts XML invoice data to PDF. This project removed the previous process, which required manually creating the PDFs.}
+        \item {Developed Java application that analyzes previous monthly electrical consumption of the company's customers and forecasts future monthly consumption, using neural networks, linear regression and moving average. The application replaced the previous process, which used previous year consumption and basic excel formulas to forecast the total monthly consumption.}
+        \item {Developed Desktop app to integrate the above application and SQL database to save results and export them in CSV format.}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
