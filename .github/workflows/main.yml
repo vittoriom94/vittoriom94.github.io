@@ -31,6 +31,7 @@ jobs:
         with:
             root_file: resume.tex
             working_directory: content/resume
+            latexmk_use_xelatex: true
       - name: Move PDF
         run: mv content/resume/resume.pdf static/resume/resume.pdf
       - name: Commit PDF
