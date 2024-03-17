@@ -35,7 +35,7 @@ jobs:
       - name: Move PDF
         run: mv content/resume/resume.pdf static/resume/resume.pdf
       - name: Commit PDF
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
             commit_message: Upload PDF by Github Actions
             file_pattern: 'static/resume/*.pdf'
