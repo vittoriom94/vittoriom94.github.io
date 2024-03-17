@@ -29,7 +29,7 @@ jobs:
       - name: Compile LaTeX resume
         uses: xu-cheng/latex-action@v2
         with:
-            root_file: main.tex
+            root_file: resume.tex
             working_directory: content/resume
       - name: Move PDF
         run: mv content/resume/resume.pdf static/resume/resume.pdf
