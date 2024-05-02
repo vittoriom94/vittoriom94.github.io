@@ -2,6 +2,7 @@
 title = "About"
 date = "2022-07-21"
 aliases = ["about-us","about-hugo","contact"]
+pageStyle = "narrow"
 [ author ]
   name = "Hugo Authors"
 +++
@@ -12,6 +13,8 @@ Below you can find some information about me. For more details, I recommend you 
 
 I am currently interested in backend and cloud technologies.
 
+||||
+|--|--|--|
 |**Work Experience**|||
 |[Ampcontrol](https://www.ampcontrol.io/)|Software Engineer|Jan 2023 - Current|
 |[Socialbeat](https://www.socialbeat.it/)|Software Engineer|Sep 2021 - Dec 2022|
@@ -19,5 +22,3 @@ I am currently interested in backend and cloud technologies.
 |**Education**|||
 |Msc in Computer Engineering|University of Salerno|2019|
 |Bsc in Computer Engineering|University of Salerno|2017|
-
-

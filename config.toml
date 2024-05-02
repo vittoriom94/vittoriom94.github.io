@@ -2,7 +2,7 @@ baseURL = "https://vittoriomattei.com"
 relativeurls=true
 languageCode = "en-us"
 title = "Vittorio Mattei"
-theme = "KeepIt"
+theme = "FixIt"
 
 paginate = 12
 enableEmoji = true
@@ -13,11 +13,6 @@ googleAnalytics = ""
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
-
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
 
 [Permalinks]
  posts = "/:year/:filename/"
@@ -44,27 +39,25 @@ googleAnalytics = ""
     weight = 4
 
 [params]
+  description = "Vittorio Mattei's personal website and blog. Software engineer talking about programming, design, python and the IT world." # site description
+  keywords = "portfolio resume blog coding programming python software engineering developer" # site keywords
+
+  license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+[params.home]
+  paginate = 0
+  [params.home.profile]
+    enable = true
+    gravatarEmail = ""
+    avatarURL = "/images/me/avatar.jpeg"
+    avatarMenu = ""
+    title = "Vittorio Mattei"
     subtitle = "A coding space"       # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
-    dateFormatToUse = "" # set date format, default "2 January 2006"
-    
-    google_verification = ""
-    bing_verification = ""
-    yandex_verification = ""
-    pinterest_verification = ""
-    baidu_verification = ""
-
-    avatar = "/images/me/avatar.jpeg" #comment it to use gravatar
-    socialShare = true
-
-    description = "Vittorio Mattei's personal website and blog. Software engineer talking about programming, design, python and the IT world." # site description
-    keywords = "portfolio resume blog coding programming python software engineering developer" # site keywords
-
-    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
-[params.gravatar]
-    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
+    typeit = true
+    social = true
+    disclaimer = ""
+  [params.home.posts]
+    enable = false
+    paginate = 0
 
 
 [params.social]
