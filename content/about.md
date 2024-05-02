@@ -9,8 +9,9 @@ aliases = ["about-us","about-hugo","contact"]
 Welcome to my personal website!  
 My name is **Vittorio Mattei** and I am a *software engineer* from **Italy**.  
 Below you can find some information about me. For more details, I recommend you to check out my [LinkedIn](https://www.linkedin.com/in/vittorio-mattei/) profile.  
+
 I am currently interested in backend and cloud technologies.
-|--|--|--|
+
 |**Work Experience**|||
 |[Ampcontrol](https://www.ampcontrol.io/)|Software Engineer|Jan 2023 - Current|
 |[Socialbeat](https://www.socialbeat.it/)|Software Engineer|Sep 2021 - Dec 2022|
