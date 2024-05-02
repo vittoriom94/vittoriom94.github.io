@@ -3,4 +3,4 @@
 	url = https://github.com/eddiewebb/hugo-resume.git
 [submodule "themes/KeepIt"]
 	path = themes/KeepIt
-	url = https://github.com/Fastbyte01/KeepIt.git
+	url = https://github.com/vittoriom94/KeepIt
